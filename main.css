@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body{
+    background-color: #E6E6E6;
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.content{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0052B5;
+    margin-top: 20px;
+}
+.content h1{
+display: flex;
+flex-direction: column;
+font-size: 9rem;
+line-height: 6rem;
+text-transform: uppercase;
+}
+.content h1:first-child{
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.content h1:nth-child(3){
+    font-size: 3.8rem;
+    line-height: 6rem;
+}
+.description{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0052B5;
+    font-size: 18px;
+}
+.description, .description a{
+    margin-top: 20px;
+}
+.description p:nth-child(2){
+    font-weight: 700;
+}
+.button{
+    background-color: #FFD600;
+    border-radius: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #0052B5;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.img{
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.animation{
+    animation-duration: 1.0s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+  }
